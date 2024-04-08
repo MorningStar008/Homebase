@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mental Health Practices: Anger</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <a href="index.html"><img id="homeButton" src="Assets/HomeButton.png"></a>
+  <a href="landing.html"><img id="backArrow" src="Assets/backButton.png"></a>
+
+  <h1 id="hayf">🌻Mental Health Practices: Anger🌻</h1>
+  <h2>Find the Trigger</h2>
+  <p class="angryText">Sometimes, it is hard to rationalize our overwhelming feelings. The first step is to find your
+    trigger. Depending on your circumstances, this could be easy or hard to think of. In the text field below, type in a
+    phrase that
+    communicates your "trigger". Journaling has also been shown to improve well-being.</p>
+  <div id="containerAngry">
+    <input type="text" class="input" id="angryInput">
+    <button onclick="angry()" id="breathingCircleButton">Submit</button>
+    <button onclick="document.getElementById('angryInput').value = ''; document.getElementById('angry').innerHTML = '';" id="breathingCircleButton">Clear
+      input field</button>
+  </div>
+
+  <p id="angry"></p>
+  <script>
+    function angry() {
+      document.getElementById("angry").innerHTML = "I understand. You have every right to feel the way you do and it's frustrating.";
+    }
+  </script>
+
+  <h2>Belly Breathes</h2>
+  <div id="breatheDiv" style="padding-bottom: 5em;">
+    <a href="four-four-four.html"><button id="breathingCircleButton">Click here to follow along with breathing circle!</button></a>
+  </div>
+  <br>
+  <p>Another strategy you can try is belly breathing (also known as diaphragmatic breathing) which allows for full
+    oxygen exchange. Here's a list of steps according to <a id="source"
+      href="https://www.health.harvard.edu/healthbeat/learning-diaphragmatic-breathing">Harvard Health
+      Publishing</a>:<br>
+  <ul>
+    <li>Lie on your back on a flat surface (or in bed) with your knees bent. You can use a pillow under your head and
+      your knees for support, if that's more comfortable.</li>
+    <li>Place one hand on your upper chest and the other on your belly, just below your rib cage.</li>
+    <li>Breathe in slowly through your nose, letting the air in deeply, towards your lower belly. The hand on your chest
+      should remain still, while the one on your belly should rise.</li>
+    <li>Tighten your abdominal muscles and let them fall inward as you exhale through pursed lips. The hand on your
+      belly should move down to its original position</li>
+  </ul>
+  </p>
+  <p>You can also practice this sitting in a chair, with your knees bent and your shoulders, head, and neck relaxed.</p>
+
+  <h2 style="white-space: wrap;" id="prm">Progressive Muscle Relaxation</h2>
+  <div style="padding-bottom: 5em;">
+    <a href="four-four-four.html"><button id="breathingCircleButton">Click here to follow along with breathing circle!</button></a>
+  </div>
+  <br>
+  <p>In a nutshell, PRM is the act of tensing one muscle group at a time followed by a relaxation phase with release of
+    the tension, according to <a id="source"
+      href="https://www.webmd.com/sleep-disorders/muscle-relaxation-for-stress-insomnia">WebMD</a>. Here are some steps
+    you can try: <br>
+  <ul>
+    <li>While inhaling, contract one muscle group (for example your upper thighs) for 5 seconds to 10 seconds, then
+      exhale and suddenly release the tension in that muscle group.</li>
+    <li>Give yourself 10 seconds to 20 seconds to relax, and then move on to the next muscle group (for example your
+      buttocks).</li>
+    <li>While releasing the tension, try to focus on the changes you feel when the muscle group is relaxed. Imagery may
+      be helpful in conjunction with the release of tension, such as imagining that stressful feelings are flowing out
+      of your body as you relax each muscle group.</li>
+    <li>Gradually work your way up the body contracting and relaxing muscle groups.</li>
+  </ul>
+  </p>
+  <br>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="yellow" position="bottom-right"></script>
+</body>
+
+</html>
